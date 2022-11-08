@@ -1,0 +1,19 @@
+Coin_10, Coin_5, Coin_2, Coin_1 = 0,0,0,0
+Change = int(input("Enter Change Amount => "))
+if Change >= 10 :
+    Coin_10 = Change//10
+    Change = Change-(Coin_10*10)
+    print ("Coin_10 = ",Coin_10," Coins")
+if Change >= 5 :
+    Coin_5 = Change//5
+    Change = Change-(Coin_5*5)
+    print ("Coin_5 = ",Coin_5," Coins")
+if Change >= 2 :
+    Coin_2 = Change//2
+    Change = Change-(Coin_2*2)
+    print ("Coin_2 = ",Coin_2," Coins")
+if Change >= 1 :
+    Coin_1 = Change
+    Change = Change-Coin_10
+    print ("Coin_1 = ",Coin_1," Coins")
+print ("Coins Used = ",Coin_10+Coin_5+Coin_2+Coin_1," Coins")
